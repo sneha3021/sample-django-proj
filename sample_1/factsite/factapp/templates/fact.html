@@ -1,0 +1,12 @@
+<!-- fact.html -->
+
+<form action="/factapp/factpost/" method=post>{% csrf_token %}
+Enter a value :
+<input type=text name=n>
+<input type=submit>
+</form>
+
+<hr>
+{% for post in posts %}
+<h3>{{ post}}</h3>
+{% endfor %}

@@ -1,0 +1,12 @@
+<!-- fibo.html -->
+
+<form action="/fibapp/fibpost/" method=post>{% csrf_token %}
+Enter a value :
+<input type=text name=n><br>
+<input type=submit>
+</form>
+
+<hr>
+{% for post in posts %}
+<h3>{{ post}}</h3>
+{% endfor %}
